@@ -100,8 +100,7 @@ int main(){
     cout<<" "<<endl;
     }
 }
-    
-int main(){
+    int main(){
     int n;
     cout<<"enter the number you want to start the decrement from"<<endl;
     cin>>n;
@@ -112,4 +111,7 @@ int main(){
         }
         cout<<endl;
     }
-}
+}  cout<<"MAIN Frame after changes is "
+    
+
+    
