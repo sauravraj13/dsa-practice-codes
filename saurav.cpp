@@ -308,7 +308,28 @@ public:
         
         return -1;
     }
+};*/
+string convert2binary(int n){
+    string result = "";
+    while(n>0){
+        if(n%2==1){
+            result+='1';
+        }else{
+            result+='0';
+        }
+        (n=n/2);
+        
+    }
+    reverse(result.begin(),result.end());
+    return result;
+}
+int main(){
+int x;
+cout<<"enter the number you want to convert in binary"<<endl;
+cin>>x;
+cout<<"binary number is\n"<<convert2binary(x);
 };
+
      
 
     
