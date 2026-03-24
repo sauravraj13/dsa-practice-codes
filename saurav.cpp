@@ -308,7 +308,7 @@ public:
         
         return -1;
     }
-};*/
+};
 string convert2binary(int n){
     string result = "";
     while(n>0){
@@ -328,6 +328,20 @@ int x;
 cout<<"enter the number you want to convert in binary"<<endl;
 cin>>x;
 cout<<"binary number is\n"<<convert2binary(x);
+};
+// leetcode 191
+class Solution {
+public:
+    int hammingWeight(int n) {
+        int count =0;
+        while(n>0){
+            if(n%2==1){
+                count++;
+            }
+            n=(n/2);
+        }
+        return count;
+    }
 };
 
      
